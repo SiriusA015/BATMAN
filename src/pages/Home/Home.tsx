@@ -17,7 +17,6 @@ import { ScrollType } from "../../types";
 
 const StyledPage = styled.div`
   width: full;
-  height: 100vh;
   background: url(${HeroImg});
   background-position: center;
   background-size: cover;
@@ -58,7 +57,11 @@ const Home = () => {
   }, [goingUp]);
 
   return (
-    <StyledPage className="text-white lg:pt-[100px] sm:pt-[90px] pt-[60px]">
+    <StyledPage
+      className={`text-white lg:pt-[100px] sm:pt-[90px] pt-[60px] ${
+        isDesktop ? "h-[110vh]" : "h-[100vh]"
+      }`}
+    >
       <div className="w-full h-full relative">
         <div className="w-full xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px]">
           <div className="2xl:mt-[100px] xl:mt-[70px] mt-[50px] font-[700] xl:text-[72px] lg:text-[60px] text-[40px] text-white">
@@ -109,7 +112,7 @@ const Home = () => {
         <div
           className={`w-full lg:flex justify-center items-center bg-black xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px] pt-[15px] ${
             isDesktop
-              ? "mt-[80px]"
+              ? "mt-[170px]"
               : `${
                   isMaxHub
                     ? `${isHub ? "mt-[-118px]" : "mt-[0px]"}`
