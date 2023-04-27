@@ -6,7 +6,10 @@ import Group from "../../../assets/images/new/Group.png";
 
 const Main = () => {
   return (
-    <div className="w-full xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px]">
+    <div
+      className="w-full h-full xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px] z-10"
+      id="#"
+    >
       <div className="2xl:mt-[100px] xl:mt-[70px] mt-[50px] font-sans font-[700] xl:text-[72px] lg:text-[60px] text-[40px] text-white">
         BATMAN
       </div>
@@ -29,24 +32,40 @@ const Main = () => {
           Read More
         </span>
       </div>
-      <div className="2xl:w-[290px] xl:w-[260px] lg:w-[220px] w-[180px] 2xl:h-[57px] xl:h-[52px] lg:h-[48px] h-[42px] 2xl:mt-[50px] xl:mt-[42px] md:mt-[33px] mt-[24px] rounded-[10px] bg-[#FDFF00] font-sans font-[550] 2xl:text-[26px] lg:text-[24px] text-[22px] text-black flex justify-center items-center cursor-pointer hover:shadow-2xl hover:scale-[1.02] transition duration-500">
+      <a
+        className="2xl:w-[290px] xl:w-[260px] lg:w-[220px] w-[180px] 2xl:h-[57px] xl:h-[52px] lg:h-[48px] h-[42px] 2xl:mt-[50px] xl:mt-[42px] md:mt-[33px] mt-[24px] rounded-[10px] bg-[#FDFF00] font-sans font-[600] 2xl:text-[26px] lg:text-[24px] text-[22px] text-black flex justify-center items-center cursor-pointer hover:shadow-2xl hover:scale-[1.02] transition duration-500 z-10"
+        href="/"
+        rel="noreferrer"
+      >
         $ Buy BM
-      </div>
+      </a>
       <div className="lg:mt-[25px] mt-[18px] flex gap-[10px]">
-        <div className="bg-[#FDFF00] 2xl:w-[56px] xl:w-[50px] lg:w-[45px] w-[40px] 2xl:h-[56px] xl:h-[50px] lg:h-[45px] h-[40px] flex justify-center items-center cursor-pointer rounded-l-[7px]">
+        <a
+          className="bg-[#FDFF00] 2xl:w-[56px] xl:w-[50px] lg:w-[45px] w-[40px] 2xl:h-[56px] xl:h-[50px] lg:h-[45px] h-[40px] flex justify-center items-center cursor-pointer rounded-l-[7px]"
+          rel="noreferrer"
+          href="/"
+        >
           <img alt="Telegram" src={Telegram} />
-        </div>
-        <div className="bg-[#FDFF00] 2xl:w-[56px] xl:w-[50px] lg:w-[45px] w-[40px] 2xl:h-[56px] xl:h-[50px] lg:h-[45px] h-[40px] flex justify-center items-center cursor-pointer">
+        </a>
+        <a
+          className="bg-[#FDFF00] 2xl:w-[56px] xl:w-[50px] lg:w-[45px] w-[40px] 2xl:h-[56px] xl:h-[50px] lg:h-[45px] h-[40px] flex justify-center items-center cursor-pointer"
+          rel="noreferrer"
+          href="/"
+        >
           <img alt="Instagram" src={Instagram} />
-        </div>
-        <div className="bg-[#FDFF00] 2xl:w-[56px] xl:w-[50px] lg:w-[45px] w-[40px] 2xl:h-[56px] xl:h-[50px] lg:h-[45px] h-[40px] flex justify-center items-center cursor-pointer rounded-r-[7px]">
+        </a>
+        <a
+          className="bg-[#FDFF00] 2xl:w-[56px] xl:w-[50px] lg:w-[45px] w-[40px] 2xl:h-[56px] xl:h-[50px] lg:h-[45px] h-[40px] flex justify-center items-center cursor-pointer rounded-r-[7px]"
+          rel="noreferrer"
+          href="/"
+        >
           <img alt="Medium" src={Medium} />
-        </div>
+        </a>
       </div>
       <div className="mt-[70px] flex gap-[16px]">
         <img alt="icon1" src={Dc} className="w-[24px] h-[24px]" />
         <img alt="icon2" src={Group} className="w-[24px] h-[24px]" />
-        <div className="font-sans font-[400] text-[16px] text-[#929292]">
+        <div className="font-sans font-[400] text-[16px] text-[#929292] z-10">
           The Dark Knight Trilogy is a British-American superhero film trilogy
           based on the DC Comics character Batman.
         </div>

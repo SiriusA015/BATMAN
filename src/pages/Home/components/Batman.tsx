@@ -5,20 +5,25 @@ const Batman = () => {
   const isDesktop = useMediaQuery({ query: "(min-width: 1650px)" });
   const isHub = useMediaQuery({ query: "(max-height: 601px)" });
   const isMaxHub = useMediaQuery({ query: "(max-height: 801px)" });
+  const isSmall = useMediaQuery({ query: "(max-width: 400px)" });
 
   return (
     <div
       className={`w-full lg:flex justify-center items-center bg-black xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px] pt-[15px] ${
-        isDesktop
-          ? "mt-[170px]"
-          : `${
-              isMaxHub
-                ? `${isHub ? "mt-[-118px]" : "mt-[0px]"}`
-                : "2xl:mt-[-10px] xl:mt-[75px] lg:mt-[130px] md:mt-[150px] mt-[150px]"
-            }`
+        isDesktop ? "mt-[0px]" : ""
       }`}
     >
-      <div className={`lg:w-[50%] ${isHub ? "mt-[250px]" : ""}`}>
+      <div
+        className={`lg:w-[50%] ${
+          isMaxHub
+            ? `${
+                isHub
+                  ? `${isSmall ? "mt-[310px]" : "mt-[280px]"}`
+                  : "mt-[150px]"
+              }`
+            : ""
+        }`}
+      >
         <div className="font-sans font-[700] 2xl:text-[72px] xl:text-[60px] lg:text-[50px] md:text-[42px] text-[32px] text-[#ffffff]">
           Who is Batman?
         </div>
@@ -37,7 +42,7 @@ const Batman = () => {
         <img
           alt="man1"
           src={Man1}
-          className="2xl:w-[500px] xl:w-[450px] w-[420px] 2xl:h-[600px] xl:h-[550px] h-[500px]"
+          className="2xl:w-[500px] xl:w-[450px] w-[420px] 2xl:h-[600px] xl:h-[550px] h-[500px] z-0"
         />
       </div>
     </div>

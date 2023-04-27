@@ -53,7 +53,11 @@ const Home = () => {
         isDesktop ? "h-[110vh]" : "h-[100vh]"
       }`}
     >
-      <div className="w-full h-full relative">
+      <div
+        className={`w-full ${
+          isDesktop ? "h-[calc(100%-110px)]" : "h-[calc(100%-100px)]"
+        } relative`}
+      >
         <Main />
         <Batman />
         <TokenDetails />

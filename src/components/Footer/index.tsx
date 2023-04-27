@@ -23,15 +23,23 @@ const Footer = () => {
         </div>
         <div className="flex justify-center items-center font-[400] 2xl:text-[20px] xl:text-[17px] lg:text-[14px] text-[12px] 2xl:gap-[100px] xl:gap-[80px] gap-[50px] md:mt-0 mt-[30px]">
           <div>
-            <div className="cursor-pointer">Back to Top</div>
+            <a className="cursor-pointer" rel="noreferrer" href="#">
+              Back to Top
+            </a>
             <div className="cursor-pointer">Privacy Policy</div>
             <div className="cursor-pointer">Policy Terms of Service</div>
             <div className="cursor-pointer">Legal Overview</div>
           </div>
-          <div>
-            <div className="underline cursor-pointer">Telegram</div>
-            <div className="underline cursor-pointer">Medium</div>
-            <div className="underline cursor-pointer">Twitter</div>
+          <div className="flex flex-col">
+            <a className="underline cursor-pointer" rel="noreferrer" href="/">
+              Telegram
+            </a>
+            <a className="underline cursor-pointer" rel="noreferrer" href="/">
+              Medium
+            </a>
+            <a className="underline cursor-pointer" rel="noreferrer" href="/">
+              Twitter
+            </a>
           </div>
         </div>
       </div>

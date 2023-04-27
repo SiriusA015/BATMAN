@@ -1,15 +1,40 @@
 import Img1 from "../../../assets/images/new/img1.png";
 import Img2 from "../../../assets/images/new/img2.png";
 import Img3 from "../../../assets/images/new/img3.png";
+import { useMediaQuery } from "react-responsive";
 
 const Movies = () => {
+  const isSmall = useMediaQuery({ query: "(max-width: 430px)" });
+  const isXSmall = useMediaQuery({ query: "(max-width: 370px)" });
+  const is2XSmall = useMediaQuery({ query: "(max-width: 340px)" });
+
   return (
-    <div className="w-full flex flex-col bg-black xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px] pt-[160px]">
+    <div
+      className={`w-full flex flex-col bg-black ${
+        isSmall
+          ? "px-[3px]"
+          : "xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px]"
+      } pt-[160px]`}
+    >
       <div className="font-sans text-center font-[700] 2xl:text-[72px] xl:text-[68px] lg:text-[62px] md:text-[58px] text-[45px] text-white mx-auto ">
         Watch the movies
       </div>
       <div className="xl:flex justify-center items-center w-full 2xl:mt-[100px] xl:mt-[80px] md:mt-[50px] mt-[30px] gap-[32px]">
-        <div className="rounded-[10px] border-[1px] border-[#383838] w-[392px] h-[200px] flex overflow-hidden xl:mx-0 mx-auto">
+        <div
+          className={`rounded-[10px] border-[1px] border-[#383838] ${
+            isSmall
+              ? `${
+                  isXSmall
+                    ? `${
+                        is2XSmall
+                          ? "w-[280px] h-[220px]"
+                          : "w-[320px] h-[220px]"
+                      }`
+                    : "w-[350px] h-[220px]"
+                }`
+              : "w-[392px] h-[200px]"
+          } flex overflow-hidden xl:mx-0 mx-auto`}
+        >
           <div className="w-full">
             <img alt="img1" src={Img1} className="w-[140px] h-[200px]" />
           </div>
@@ -28,16 +53,42 @@ const Movies = () => {
               Dark Knight's emergence as a force...
             </div>
             <div className="mt-[12px] flex justify-between items-center w-full">
-              <div className="rounded-[8px] bg-[#FDFF00] w-[100px] h-[26px] flex justify-center items-center font-sans font-[700] text-[12px] text-[#000000] cursor-pointer">
+              <a
+                className={`rounded-[8px] bg-[#FDFF00] ${
+                  isSmall ? "w-[80px] h-[22px]" : "w-[100px] h-[26px]"
+                } flex justify-center items-center font-sans font-[700] text-[12px] text-[#000000] cursor-pointer`}
+                rel="noreferrer"
+                href="/"
+              >
                 Watch
-              </div>
-              <div className="rounded-[8px] border-[1px] border-[#B2B2B2] w-[100px] h-[26px] flex justify-center items-center font-sans font-[700] text-[12px] text-[#B2B2B2] cursor-pointer">
+              </a>
+              <a
+                className={`rounded-[8px] border-[1px] border-[#B2B2B2] ${
+                  isSmall ? "w-[80px] h-[22px]" : "w-[100px] h-[26px]"
+                } flex justify-center items-center font-sans font-[700] text-[12px] text-[#B2B2B2] cursor-pointer`}
+                rel="noreferrer"
+                href="/"
+              >
                 Details
-              </div>
+              </a>
             </div>
           </div>
         </div>
-        <div className="rounded-[10px] border-[1px] border-[#383838] w-[392px] h-[200px] flex overflow-hidden xl:mx-0 mx-auto xl:mt-0 mt-[30px]">
+        <div
+          className={`rounded-[10px] border-[1px] border-[#383838] ${
+            isSmall
+              ? `${
+                  isXSmall
+                    ? `${
+                        is2XSmall
+                          ? "w-[280px] h-[220px]"
+                          : "w-[320px] h-[220px]"
+                      }`
+                    : "w-[350px] h-[220px]"
+                }`
+              : "w-[392px] h-[200px]"
+          } flex overflow-hidden xl:mx-0 mx-auto xl:mt-0 mt-[30px]`}
+        >
           <div className="w-full">
             <img alt="img2" src={Img2} className="w-[140px] h-[200px]" />
           </div>
@@ -56,16 +107,42 @@ const Movies = () => {
               their blockbuster success with...
             </div>
             <div className="mt-[12px] flex justify-between items-center w-full">
-              <div className="rounded-[8px] bg-[#FDFF00] w-[100px] h-[26px] flex justify-center items-center font-sans font-[700] text-[12px] text-[#000000] cursor-pointer">
+              <a
+                className={`rounded-[8px] bg-[#FDFF00] ${
+                  isSmall ? "w-[80px] h-[22px]" : "w-[100px] h-[26px]"
+                } flex justify-center items-center font-sans font-[700] text-[12px] text-[#000000] cursor-pointer`}
+                rel="noreferrer"
+                href="/"
+              >
                 Watch
-              </div>
-              <div className="rounded-[8px] border-[1px] border-[#B2B2B2] w-[100px] h-[26px] flex justify-center items-center font-sans font-[700] text-[12px] text-[#B2B2B2] cursor-pointer">
+              </a>
+              <a
+                className={`rounded-[8px] border-[1px] border-[#B2B2B2] ${
+                  isSmall ? "w-[80px] h-[22px]" : "w-[100px] h-[26px]"
+                } flex justify-center items-center font-sans font-[700] text-[12px] text-[#B2B2B2] cursor-pointer`}
+                rel="noreferrer"
+                href="/"
+              >
                 Details
-              </div>
+              </a>
             </div>
           </div>
         </div>
-        <div className="rounded-[10px] border-[1px] border-[#383838] w-[392px] h-[200px] flex overflow-hidden xl:mx-0 mx-auto xl:mt-0 mt-[30px]">
+        <div
+          className={`rounded-[10px] border-[1px] border-[#383838] ${
+            isSmall
+              ? `${
+                  isXSmall
+                    ? `${
+                        is2XSmall
+                          ? "w-[280px] h-[230px]"
+                          : "w-[320px] h-[220px]"
+                      }`
+                    : "w-[350px] h-[220px]"
+                }`
+              : "w-[392px] h-[200px]"
+          } flex overflow-hidden xl:mx-0 mx-auto xl:mt-0 mt-[30px]`}
+        >
           <div className="w-full">
             <img alt="img3" src={Img3} className="w-[140px] h-[200px]" />
           </div>
@@ -84,12 +161,24 @@ const Movies = () => {
               Christopher Nolan returns to Gotham to complete his...
             </div>
             <div className="mt-[12px] flex justify-between items-center w-full">
-              <div className="rounded-[8px] bg-[#FDFF00] w-[100px] h-[26px] flex justify-center items-center font-sans font-[700] text-[12px] text-[#000000] cursor-pointer">
+              <a
+                className={`rounded-[8px] bg-[#FDFF00] ${
+                  isSmall ? "w-[80px] h-[22px]" : "w-[100px] h-[26px]"
+                } flex justify-center items-center font-sans font-[700] text-[12px] text-[#000000] cursor-pointer`}
+                rel="noreferrer"
+                href="/"
+              >
                 Watch
-              </div>
-              <div className="rounded-[8px] border-[1px] border-[#B2B2B2] w-[100px] h-[26px] flex justify-center items-center font-sans font-[700] text-[12px] text-[#B2B2B2] cursor-pointer">
+              </a>
+              <a
+                className={`rounded-[8px] border-[1px] border-[#B2B2B2] ${
+                  isSmall ? "w-[80px] h-[22px]" : "w-[100px] h-[26px]"
+                } flex justify-center items-center font-sans font-[700] text-[12px] text-[#B2B2B2] cursor-pointer`}
+                rel="noreferrer"
+                href="/"
+              >
                 Details
-              </div>
+              </a>
             </div>
           </div>
         </div>
