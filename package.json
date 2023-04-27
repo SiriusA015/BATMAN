@@ -1,8 +1,9 @@
 {
-  "name": "bitman",
+  "name": "batman",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fontsource/space-grotesk": "^4.5.13",
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^1.0.6",
     "@material-tailwind/react": "^1.1.0",

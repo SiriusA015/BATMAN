@@ -1,9 +1,10 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
-import Home from "./pages/Home/Home";
-import Error from "./pages/Error/Error";
-import Home1 from "./pages/Home1/Home1";
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+import Home1 from "./pages/Home1";
+import "@fontsource/space-grotesk";
 
 function App() {
   const router = createBrowserRouter([

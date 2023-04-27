@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header/Header";
 import styled from "styled-components";
-import Footer from "../components/Footer";
 
 const StyledPage = styled.div`
   width: 100%;

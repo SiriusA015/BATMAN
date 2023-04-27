@@ -59,7 +59,8 @@ module.exports = withMT({
         '1/1': '100%',
       },
       fontFamily: {
-        inter: ['Inter', 'sans-serif']
+        inter: ['Inter', 'sans-serif'],
+        sans: ['Space Grotesk', 'sans-serif'],
       },
       fontSize: {
         xs: '0.75rem',

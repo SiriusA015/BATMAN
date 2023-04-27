@@ -49,7 +49,7 @@ function Header() {
             >
               <li>
                 <div
-                  className={`font-[500] text-[#ffffff] hover:bg-[#6B411C] rounded-full px-[20px] py-[10px] flex items-center transition duration-500 ease-in-out cursor-pointer ${
+                  className={`font-sans font-[500] text-[#ffffff] hover:bg-[#6B411C] rounded-full px-[20px] py-[10px] flex items-center transition duration-500 ease-in-out cursor-pointer ${
                     isDesktop ? "mr-[40px]" : "mr-[20px]"
                   }`}
                 >
@@ -58,7 +58,7 @@ function Header() {
               </li>
               <li>
                 <div
-                  className={`font-[500] text-[#ffffff] hover:bg-[#6B411C] rounded-full px-[20px] py-[10px] flex items-center transition duration-500 ease-in-out cursor-pointer ${
+                  className={`font-sans font-[500] text-[#ffffff] hover:bg-[#6B411C] rounded-full px-[20px] py-[10px] flex items-center transition duration-500 ease-in-out cursor-pointer ${
                     isDesktop ? "mr-[40px]" : "mr-[20px]"
                   }`}
                 >
@@ -67,7 +67,7 @@ function Header() {
               </li>
               <li>
                 <div
-                  className={`font-[500] text-[#ffffff] hover:bg-[#6B411C] rounded-full px-[20px] py-[10px] flex items-center transition duration-500 ease-in-out cursor-pointer ${
+                  className={`font-sans font-[500] text-[#ffffff] hover:bg-[#6B411C] rounded-full px-[20px] py-[10px] flex items-center transition duration-500 ease-in-out cursor-pointer ${
                     isDesktop ? "mr-[40px]" : "mr-[20px]"
                   }`}
                 >
@@ -76,7 +76,7 @@ function Header() {
               </li>
               <li>
                 <div
-                  className={`font-[500] text-[#ffffff] hover:bg-[#6B411C] rounded-full px-[20px] py-[10px] flex items-center transition duration-500 ease-in-out cursor-pointer ${
+                  className={`font-sans font-[500] text-[#ffffff] hover:bg-[#6B411C] rounded-full px-[20px] py-[10px] flex items-center transition duration-500 ease-in-out cursor-pointer ${
                     isDesktop ? "mr-[40px]" : "mr-[20px]"
                   }`}
                 >
@@ -85,7 +85,7 @@ function Header() {
               </li>
               <li>
                 <div
-                  className={`font-bold text-[#111111] bg-[#FDFF00] rounded-[12px] px-[50px] py-[7px] flex items-center transition duration-500 ease-in-out cursor-pointer hover:text-[#999999] hover:shadow-2xl hover:scale-[1.01]`}
+                  className={`font-sans font-bold text-[#111111] bg-[#FDFF00] rounded-[12px] px-[50px] py-[7px] flex items-center transition duration-500 ease-in-out cursor-pointer hover:text-[#999999] hover:shadow-2xl hover:scale-[1.01]`}
                 >
                   Buy $BM
                 </div>
@@ -102,22 +102,22 @@ function Header() {
         {isViewMobile && !isTablet && (
           <div className="w-full flex flex-col justify-center items-center xl:text-[18px] lg:text-[17px] md:text-[16px] sm:text-[15px] text-[14px] md:pb-[30px] pb-[20px]">
             <div
-              className={`mt-[20px] font-bold text-[#ffffff] text-center cursor-pointer`}
+              className={`mt-[20px] font-sans font-bold text-[#ffffff] text-center cursor-pointer`}
             >
               Who is Batman?
             </div>
             <div
-              className={`mt-[20px] font-bold text-[#ffffff] text-center cursor-pointer`}
+              className={`mt-[20px] font-sans font-bold text-[#ffffff] text-center cursor-pointer`}
             >
               Token
             </div>
             <div
-              className={`mt-[20px] font-bold text-[#ffffff] text-center cursor-pointer`}
+              className={`mt-[20px] font-sans font-bold text-[#ffffff] text-center cursor-pointer`}
             >
               Telegram
             </div>
             <div
-              className={`mt-[20px] font-bold text-[#ffffff] text-center cursor-pointer`}
+              className={`mt-[20px] font-sans font-bold text-[#ffffff] text-center cursor-pointer`}
             >
               Watch Movie
             </div>
