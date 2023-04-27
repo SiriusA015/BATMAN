@@ -60,7 +60,7 @@ const Home = () => {
       <div className="w-full h-full relative">
         <div className="w-full xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px]">
           <div className="2xl:mt-[100px] xl:mt-[70px] mt-[50px] font-[700] xl:text-[72px] lg:text-[60px] text-[40px] text-white">
-            BITMAN
+            BATMAN
           </div>
           <div className="2xl:mt-[20px] lg:mt-[14px] mt-[12px] font-[600] xl:text-[28px] lg:text-[24px] text-[22px] text-white">
             The Dark Knight
