@@ -15,6 +15,7 @@ const Movies = () => {
           ? "px-[3px]"
           : "xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px]"
       } pt-[160px]`}
+      id="movie"
     >
       <div className="font-sans text-center font-[700] 2xl:text-[72px] xl:text-[68px] lg:text-[62px] md:text-[58px] text-[45px] text-white mx-auto ">
         Watch the movies

@@ -48,40 +48,48 @@ function Header() {
               }`}
             >
               <li>
-                <div
+                <a
                   className={`font-sans font-[500] text-[#ffffff] hover:bg-[#6B411C] rounded-full px-[20px] py-[10px] flex items-center transition duration-500 ease-in-out cursor-pointer ${
                     isDesktop ? "mr-[40px]" : "mr-[20px]"
                   }`}
+                  href="/#batman"
+                  rel="noreferrer"
                 >
                   Who is Batman?
-                </div>
+                </a>
               </li>
               <li>
-                <div
+                <a
                   className={`font-sans font-[500] text-[#ffffff] hover:bg-[#6B411C] rounded-full px-[20px] py-[10px] flex items-center transition duration-500 ease-in-out cursor-pointer ${
                     isDesktop ? "mr-[40px]" : "mr-[20px]"
                   }`}
+                  href="/#token"
+                  rel="noreferrer"
                 >
                   Token
-                </div>
+                </a>
               </li>
               <li>
-                <div
+                <a
                   className={`font-sans font-[500] text-[#ffffff] hover:bg-[#6B411C] rounded-full px-[20px] py-[10px] flex items-center transition duration-500 ease-in-out cursor-pointer ${
                     isDesktop ? "mr-[40px]" : "mr-[20px]"
                   }`}
+                  href="/#bottom"
+                  rel="noreferrer"
                 >
                   Telegram
-                </div>
+                </a>
               </li>
               <li>
-                <div
+                <a
                   className={`font-sans font-[500] text-[#ffffff] hover:bg-[#6B411C] rounded-full px-[20px] py-[10px] flex items-center transition duration-500 ease-in-out cursor-pointer ${
                     isDesktop ? "mr-[40px]" : "mr-[20px]"
                   }`}
+                  href="/#movie"
+                  rel="noreferrer"
                 >
                   Watch Movie
-                </div>
+                </a>
               </li>
               <li>
                 <div

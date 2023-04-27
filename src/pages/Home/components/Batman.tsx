@@ -12,6 +12,7 @@ const Batman = () => {
       className={`w-full lg:flex justify-center items-center bg-black xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px] pt-[15px] ${
         isDesktop ? "mt-[0px]" : ""
       }`}
+      id="batman"
     >
       <div
         className={`lg:w-[50%] ${

@@ -4,7 +4,10 @@ import Peakpx from "../../assets/images/new/peakpx.png";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-black font-sans xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px] 2xl:pt-[180px] xl:pt-[160px] lg:pt-[140px] pt-[100px] 2xl:pb-[119px] xl:pb-[90px] lg:pb-[70px] pb-[50px]">
+    <div
+      className="w-full bg-black font-sans xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px] 2xl:pt-[180px] xl:pt-[160px] lg:pt-[140px] pt-[100px] 2xl:pb-[119px] xl:pb-[90px] lg:pb-[70px] pb-[50px]"
+      id="bottom"
+    >
       <div className="w-full md:flex justify-between">
         <div className="flex justify-center items-center 2xl:gap-[56px] xl:gap-[40px] gap-[30px]">
           <img

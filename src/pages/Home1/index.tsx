@@ -106,7 +106,7 @@ const Home1 = () => {
               : "2xl:mt-[200px] xl:mt-[75px] lg:mt-[130px] md:mt-[190px] mt-[190px]"
           }`}
         >
-          <div className="lg:w-[50%]">
+          <div className="lg:w-[50%]" id="/#test">
             <div className="font-[700] 2xl:text-[72px] xl:text-[60px] lg:text-[50px] md:text-[42px] text-[32px] text-[#ffffff]">
               Who is Superman?
             </div>
@@ -246,9 +246,13 @@ const Home1 = () => {
                   Christopher Nolan returns to Gotham to complete his...
                 </div>
                 <div className="mt-[12px] flex justify-between items-center w-full">
-                  <div className="rounded-[8px] bg-[#FDFF00] w-[100px] h-[26px] flex justify-center items-center font-[700] text-[12px] text-[#000000] cursor-pointer">
+                  <a
+                    className="rounded-[8px] bg-[#FDFF00] w-[100px] h-[26px] flex justify-center items-center font-[700] text-[12px] text-[#000000] cursor-pointer"
+                    href="/#test"
+                    rel="noreferrer"
+                  >
                     Watch
-                  </div>
+                  </a>
                   <div className="rounded-[8px] border-[1px] border-[#B2B2B2] w-[100px] h-[26px] flex justify-center items-center font-[700] text-[12px] text-[#B2B2B2] cursor-pointer">
                     Details
                   </div>

@@ -5,7 +5,10 @@ const TokenDetails = () => {
   const isSmall = useMediaQuery({ query: "(max-width: 430px)" });
 
   return (
-    <div className="w-full lg:flex bg-black xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px] pt-[78px]">
+    <div
+      className="w-full lg:flex bg-black xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px] pt-[78px]"
+      id="token"
+    >
       <div className="lg:w-[30%] flex items-center justify-center">
         <img
           alt="man2"
