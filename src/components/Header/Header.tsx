@@ -109,26 +109,34 @@ function Header() {
         </div>
         {isViewMobile && !isTablet && (
           <div className="w-full flex flex-col justify-center items-center xl:text-[18px] lg:text-[17px] md:text-[16px] sm:text-[15px] text-[14px] md:pb-[30px] pb-[20px]">
-            <div
+            <a
               className={`mt-[20px] font-sans font-bold text-[#ffffff] text-center cursor-pointer`}
+              href="/#batman"
+              rel="noreferrer"
             >
               Who is Batman?
-            </div>
-            <div
+            </a>
+            <a
               className={`mt-[20px] font-sans font-bold text-[#ffffff] text-center cursor-pointer`}
+              href="/#token"
+              rel="noreferrer"
             >
               Token
-            </div>
-            <div
+            </a>
+            <a
               className={`mt-[20px] font-sans font-bold text-[#ffffff] text-center cursor-pointer`}
+              href="/#bottom"
+              rel="noreferrer"
             >
               Telegram
-            </div>
-            <div
+            </a>
+            <a
               className={`mt-[20px] font-sans font-bold text-[#ffffff] text-center cursor-pointer`}
+              href="/#movie"
+              rel="noreferrer"
             >
               Watch Movie
-            </div>
+            </a>
           </div>
         )}
       </div>
