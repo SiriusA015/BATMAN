@@ -26,6 +26,8 @@ const StyledPage = styled.div`
 const Home = () => {
   const [scrollType, setScrollType] = useState(ScrollType.Initial);
   const isDesktop = useMediaQuery({ query: "(min-width: 1650px)" });
+  const isHub = useMediaQuery({ query: "(max-height: 601px)" });
+  const isMaxHub = useMediaQuery({ query: "(max-height: 801px)" });
   const prevScrollY = useRef(0);
 
   const [goingUp, setGoingUp] = useState(false);
@@ -96,8 +98,8 @@ const Home = () => {
             </div>
           </div>
           <div className="mt-[70px] flex gap-[16px]">
-            <img alt="icon1" src={Dc} />
-            <img alt="icon2" src={Group} />
+            <img alt="icon1" src={Dc} className="w-[24px] h-[24px]" />
+            <img alt="icon2" src={Group} className="w-[24px] h-[24px]" />
             <div className="font-[400] text-[16px] text-[#929292]">
               The Dark Knight Trilogy is a British-American superhero film
               trilogy based on the DC Comics character Batman.
@@ -108,10 +110,14 @@ const Home = () => {
           className={`w-full lg:flex justify-center items-center bg-black xl:px-[100px] lg:px-[80px] md:px-[40px] px-[20px] pt-[15px] ${
             isDesktop
               ? "mt-[80px]"
-              : "2xl:mt-[-10px] xl:mt-[75px] lg:mt-[130px] md:mt-[150px] mt-[150px]"
+              : `${
+                  isMaxHub
+                    ? `${isHub ? "mt-[-118px]" : "mt-[0px]"}`
+                    : "2xl:mt-[-10px] xl:mt-[75px] lg:mt-[130px] md:mt-[150px] mt-[150px]"
+                }`
           }`}
         >
-          <div className="lg:w-[50%]">
+          <div className={`lg:w-[50%] ${isHub ? "mt-[250px]" : ""}`}>
             <div className="font-[700] 2xl:text-[72px] xl:text-[60px] lg:text-[50px] md:text-[42px] text-[32px] text-[#ffffff]">
               Who is Batman?
             </div>

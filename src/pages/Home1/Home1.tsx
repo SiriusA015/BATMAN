@@ -10,7 +10,7 @@ import Img1 from "../../assets/images/new/img1.png";
 import Img2 from "../../assets/images/new/img2.png";
 import Img3 from "../../assets/images/new/img3.png";
 import Peakpx from "../../assets/images/new/peakpx.png";
-import { useEffect, useState, useRef, Fragment } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
 import { ScrollType } from "../../types";
